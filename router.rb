@@ -71,6 +71,7 @@ class Router
   end
 
   def stop!
+    @employee = nil
     @running = false
   end
 end
