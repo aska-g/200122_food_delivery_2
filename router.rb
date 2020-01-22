@@ -8,8 +8,8 @@ class Router
 
   def run
     while @running
-      @employee = @sessions_controller.login
-      if @employee # instance of Employee
+    @employee = @sessions_controller.login
+      while @employee # instance of Employee
         if @employee.manager?
           display_manager_menu
           choice = gets.chomp.to_i
